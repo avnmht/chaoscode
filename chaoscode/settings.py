@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-import django_heroku
 from .email_info import *
 #for gmail or google apps
 EMAIL_USE_TLS=EMAIL_USE_TLS
@@ -158,4 +157,3 @@ STATICFILES_DIRS=[
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/images') 
 MEDIA_URL = '/media/images/'
-django_heroku.settings(locals())
